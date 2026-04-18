@@ -23,6 +23,11 @@ const bcrypt = require('bcrypt');
 
 app.use(express.json());
 
+app.use((req, res, next) => {
+  res.setHeader("Cross-Origin-Opener-Policy", "same-origin-allow-popups");
+  next();
+});
+
 app.use(cors({
   origin: [
     'https://my-tor-seven.vercel.app', // האתר ב-Vercel
