@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../assets/4065629-uhd_2160_4096_25fps.mp4";
+import BusinessWomen from "../assets/BusinessWomen.png";
 import Header from "../components/signUpComponents/Header";
 import FormSignUp from "../components/signUpComponents/FormSignUp";
 
@@ -13,13 +13,16 @@ const SignUp = () => {
         </div>
       </div>
       <div className="hidden lg:block lg:w-1/2 rounded-lg overflow-hidden ">
-        <video
+        {/* <video
           src={video}
           autoPlay
           muted
           loop
           className="w-full h-screen object-cover  rounded-lg "
-        />
+        /> */}
+        <div>
+          <img src={BusinessWomen} alt="BusinessWomen" className="w-full h-screen object-cover  rounded-lg"/>
+        </div>
       </div>
     </div>
   );

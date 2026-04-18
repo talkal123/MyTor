@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
 import { MdAppRegistration } from "react-icons/md";
-import { FcGoogle } from "react-icons/fc";
-import axios from 'axios';
 import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from 'jwt-decode';
 import { useNavigate } from 'react-router-dom';

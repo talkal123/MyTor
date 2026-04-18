@@ -1,6 +1,5 @@
 export const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL
 import axios from 'axios'
-import { User } from 'lucide-react';
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -14,11 +13,6 @@ const FormSignIn = ({loading,setLoading}) => {
     const [newUser,setNewUser] = useState({})
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
-
-
-    console.log(newUser);
-    
-    
 
 
 const handleSubmit = (e) => {
