@@ -21,7 +21,7 @@ const API_KEY_VONAGE = process.env.API_KEY_VONAGE
 const API_KEY_VONAGE_SECRET = process.env.API_KEY_VONAGE_SECRET
 const bcrypt = require('bcrypt');
 
-
+console.log("MONGO_URL:", process.env.MONGO_URL);
 app.use(express.json());
 
 
