@@ -13,13 +13,7 @@ const SignUp = () => {
         </div>
       </div>
       <div className="hidden lg:block lg:w-1/2 rounded-lg overflow-hidden ">
-        {/* <video
-          src={video}
-          autoPlay
-          muted
-          loop
-          className="w-full h-screen object-cover  rounded-lg "
-        /> */}
+        
         <div>
           <img src={BusinessWomen} alt="BusinessWomen" className="w-full h-screen object-cover  rounded-lg"/>
         </div>

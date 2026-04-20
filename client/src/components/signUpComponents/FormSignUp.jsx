@@ -9,7 +9,7 @@ const FormSignUp = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [gender, setGender] = useState("");
-  const [role, setRole] = useState("");
+  const [role, setRole] = useState("client");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -21,6 +21,7 @@ const FormSignUp = () => {
   console.log(newUser);
   console.log(gender);
   console.log(city);
+  console.log(role);
   
   
 
@@ -33,8 +34,10 @@ const FormSignUp = () => {
       .then((result) => {
         console.log(result);
         setSuccessMessage("Account successfully created");
-        setErrorMessage("");
-        navigate("/signIn");
+        setTimeout(() => {
+          setErrorMessage("");
+          navigate("/signIn");
+        }, 3000);
       })
       .catch((err) => {
         console.log(err);
