@@ -68,6 +68,7 @@ const ProfilePage = () => {
       .then((response) => {
         setUserDetails(response.data);
         alert("Profile updated successfully!");
+        navigate("/home")
       })
       .catch((err) => console.log(err));
   };

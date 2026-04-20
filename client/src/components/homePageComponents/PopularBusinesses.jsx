@@ -4,7 +4,8 @@ import UnHappyPhoto from '../../assets/unhappy-result.svg'
 import { useNavigate } from 'react-router-dom';
 const PopularBusinesses = ({data,userDetails,setCategory,category}) => {
     const newCategory = category.charAt(0).toUpperCase() + category.slice(1);
-
+ 
+    
   const navigate = useNavigate()
 const handleClick = () => {
   navigate(`/business/category/${category.toLowerCase()}`);
@@ -15,7 +16,7 @@ const handleClick = () => {
     <div className='w-full'>
       <div className='flex justify-between items-center'>
         <h1 className='font-semibold text-lg'>Popular {newCategory}s</h1>
-        <span onClick={() => handleClick()} className='text-sm text-gray-500 cursor-pointer'>View all</span>
+        {/* <span onClick={() => handleClick()} className='text-sm text-gray-500 cursor-pointer'>View all nearby</span> */}
       </div>
       <div className='p-1 mt-5 flex flex-col gap-5'>
         {data.length === 0 ? (
