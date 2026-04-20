@@ -27,7 +27,7 @@ const HeaderHomePage = ({ userDetails, data,searchRef }) => {
     if (inputValue.trim() === "") {
       setDisplay(false);
     } else {
-      setDisplay(filter.length > 0);
+      setDisplay(true);
     }
   }, [inputValue, data]);
 
@@ -103,7 +103,7 @@ const HeaderHomePage = ({ userDetails, data,searchRef }) => {
                 <input
                   onChange={(e) => {
                     setInputValue(e.target.value);
-                    displayFunc();
+                    setDisplay(false);
                   }}
                   placeholder="Search your place here"
                   type="text"
